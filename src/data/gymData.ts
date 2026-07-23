@@ -1,17 +1,22 @@
 import { Review, PricingPlan, FacilityItem } from '../types';
 import facilityImg1 from '../assets/images/gym_facility_garrucha_1784783171998.jpg';
+import strengthMachineryImg from '../assets/images/strength_machinery_gym_1784802384662.jpg';
 import heroGymImg from '../assets/images/hero_gym_garrucha_1784783147030.jpg';
 
 export const GYM_INFO = {
   name: "GYM SOUTH BEACH GARRUCHA",
+  brandSubtitle: "TEAM SANDU - SOUTH BEACH GYM",
   websiteUrl: "https://gym-south-beach-garrucha.com",
   domainDisplay: "gym-south-beach-garrucha.com",
   location: "Garrucha, Almería (España)",
   nearbyAreas: ["Vera", "Mojácar", "Puerto Rey", "Vera Playa"],
   googleRating: 5.0,
   googleReviewsCount: 147,
-  phone: "+34 678 31 86 21", // Standard formatted contact
-  whatsappNumber: "34678318621",
+  phone: "+34 678 318 615 / +34 678 318 621",
+  phone1: "678 318 615",
+  phone2: "678 318 621",
+  whatsappNumber: "34678318615",
+  whatsappNumber2: "34678318621",
   address: "C. del Mar, 1, 04630 Garrucha, Almería",
   schedule: [
     { days: "Lunes a Viernes", hours: "08:00 - 22:00" },
@@ -65,6 +70,82 @@ export const REVIEWS_DATA: Review[] = [
     date: "Hace 2 meses",
     comment: "Vivo en Vera pero vengo a South Beach a Garrucha porque merece la pena 100%. Equipos continuamente renovados y muy buen ambiente para entrenar duro.",
     tag: "Maquinaria"
+  }
+];
+
+export const EMS_BENEFITS = [
+  { id: 'fuerza', title: 'MÁS FUERZA Y MASA MUSCULAR', description: 'Estimulación profunda de fibras musculares' },
+  { id: 'grasa', title: 'QUEMA DE GRASA', description: 'Activación metabólica acelerada' },
+  { id: 'postura', title: 'MEJORA POSTURA', description: 'Fortalecimiento de core y zona lumbar' },
+  { id: 'recuperacion', title: 'RECUPERACIÓN RÁPIDA', description: 'Regeneración muscular sin sobrecarga articular' },
+];
+
+export const EMS_PRICING_PLANS = [
+  {
+    id: "1-sesion",
+    title: "1 SESIÓN",
+    subtitle: "Electroestimulación Muscular",
+    price: "40€",
+    period: "1 sesión",
+    badge: undefined,
+    discountTag: undefined,
+    features: [
+      "1 Sesión de Entrenamiento EMS (20 min)",
+      "Equipamiento técnico incluido",
+      "Entrenador personal durante la sesión",
+      "Valoración inicial rápida"
+    ],
+    ctaText: "RESERVAR 1 SESIÓN"
+  },
+  {
+    id: "4-sesiones",
+    title: "4 SESIONES",
+    subtitle: "Bono Mensual Básico",
+    price: "150€",
+    period: "bono 4 sesiones",
+    badge: "AHORA 10€",
+    discountTag: "AHORA 10€",
+    features: [
+      "4 Sesiones de EMS (1 por semana)",
+      "Cambia tu cuerpo en 20 min/semana",
+      "Seguimiento de evolución física",
+      "Horarios adaptables a tu agenda"
+    ],
+    ctaText: "RESERVAR 4 SESIONES"
+  },
+  {
+    id: "8-sesiones",
+    title: "8 SESIONES",
+    subtitle: "Bono Recomendado (2x20 min/sem)",
+    price: "250€",
+    period: "bono 8 sesiones",
+    badge: "AHORA 70€",
+    discountTag: "AHORA 70€",
+    popular: true,
+    features: [
+      "8 Sesiones de EMS (2 por semana)",
+      "Resultados en tiempo récord",
+      "Máxima quema de grasa y tonificación",
+      "Ahorra 70€ respecto a sesión suelta"
+    ],
+    ctaText: "RESERVAR 8 SESIONES"
+  },
+  {
+    id: "10-sesiones",
+    title: "10 SESIONES",
+    subtitle: "Pack Máximo Ahorro",
+    price: "280€",
+    period: "bono 10 sesiones",
+    badge: "MEJOR PRECIO",
+    discountTag: "MEJOR PRECIO",
+    popular: true,
+    features: [
+      "10 Sesiones completas de EMS",
+      "Mejor precio por sesión (sólo 28€/sesión)",
+      "Plan nutricional y postural básico",
+      "Ahorro máximo y preferencia de agenda"
+    ],
+    ctaText: "RESERVAR 10 SESIONES"
   }
 ];
 
@@ -125,7 +206,7 @@ export const FACILITIES_DATA: FacilityItem[] = [
     title: "Maquinaria de Fuerza Renovada",
     description: "Equipamiento de musculación completo con renovación continua para trabajar cada grupo muscular de forma precisa y segura.",
     category: "maquinaria",
-    imageUrl: facilityImg1
+    imageUrl: strengthMachineryImg
   },
   {
     id: "f2",

@@ -110,16 +110,30 @@ export const LocationAndContact: React.FC<LocationAndContactProps> = ({ onOpenTr
             <p className="text-[#004E89]/90 text-xs font-bold mb-4">
               Respondemos tus dudas en cuestión de minutos por WhatsApp sin ningún compromiso.
             </p>
-            <motion.a
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              href={`https://wa.me/${GYM_INFO.whatsappNumber}?text=${encodeURIComponent('Hola GYM SOUTH BEACH GARRUCHA!')}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full bg-[#004E89] hover:bg-[#003863] text-white font-black text-xs uppercase tracking-wider py-3.5 rounded-full text-center inline-block shadow cursor-pointer"
-            >
-              Escribir por WhatsApp Ahora
-            </motion.a>
+            <div className="flex flex-col sm:flex-row gap-2.5">
+              <motion.a
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.97 }}
+                href={`https://wa.me/${GYM_INFO.whatsappNumber}?text=${encodeURIComponent('Hola GYM SOUTH BEACH GARRUCHA!')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 bg-[#004E89] hover:bg-[#003863] text-white font-black text-xs uppercase tracking-wider py-3.5 rounded-full text-center inline-flex items-center justify-center gap-1.5 shadow cursor-pointer"
+              >
+                <MessageCircle className="w-3.5 h-3.5 text-[#FFD166]" />
+                <span>678 318 615</span>
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.97 }}
+                href={`https://wa.me/${GYM_INFO.whatsappNumber2}?text=${encodeURIComponent('Hola GYM SOUTH BEACH GARRUCHA!')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 bg-[#004E89] hover:bg-[#003863] text-white font-black text-xs uppercase tracking-wider py-3.5 rounded-full text-center inline-flex items-center justify-center gap-1.5 shadow cursor-pointer"
+              >
+                <MessageCircle className="w-3.5 h-3.5 text-[#FFD166]" />
+                <span>678 318 621</span>
+              </motion.a>
+            </div>
           </div>
 
         </motion.div>
