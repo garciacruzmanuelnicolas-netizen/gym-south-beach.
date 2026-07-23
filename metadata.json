@@ -1,0 +1,8 @@
+{
+  "name": "GYM SOUTH BEACH GARRUCHA",
+  "description": "Sitio web oficial y centro de comunidad de GYM SOUTH BEACH GARRUCHA (Almería). Tu gimnasio cercano, familiar y acogedor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
