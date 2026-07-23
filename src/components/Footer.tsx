@@ -105,6 +105,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenTrialModal }) => {
           </p>
         </div>
 
+        {/* Small transparent watermark at the very bottom */}
+        <div className="mt-6 pt-4 border-t border-white/5 text-center">
+          <span className="text-[10px] text-slate-400/50 tracking-wider font-light uppercase select-none">
+            Creado por Nicolás
+          </span>
+        </div>
+
       </div>
     </footer>
   );

@@ -198,16 +198,7 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenTrialModal }) => {
                   className="bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs uppercase tracking-wider px-6 py-3.5 rounded-full inline-flex items-center gap-2 shadow-lg transition-transform hover:scale-105"
                 >
                   <MessageCircle className="w-4 h-4" />
-                  <span>WhatsApp: {GYM_INFO.phone1}</span>
-                </a>
-                <a
-                  href={`https://wa.me/${GYM_INFO.whatsappNumber2}?text=${encodeURIComponent('Hola! Quisiera consultar disponibilidad para EMS')}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs uppercase tracking-wider px-6 py-3.5 rounded-full inline-flex items-center gap-2 shadow-lg transition-transform hover:scale-105"
-                >
-                  <MessageCircle className="w-4 h-4" />
-                  <span>WhatsApp: {GYM_INFO.phone2}</span>
+                  <span>WhatsApp EMS: {GYM_INFO.phone1}</span>
                 </a>
               </div>
             </div>
